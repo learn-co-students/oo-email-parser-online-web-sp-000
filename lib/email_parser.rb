@@ -4,14 +4,14 @@
 # or whitespace (' ').
 
 class EmailParser
-    #reader, writer not to be modified.
+
     attr_accessor :emails
 
-    #keep track of email
+
     def initialize (emails)
         @emails = emails
     end
-     #divide string by comma and space. Split string. Remove duplicates.
+
     def parse
         @emails.gsub(",", " ").split(" ").uniq
     end
