@@ -12,18 +12,7 @@ class EmailParser
   end
   
   def parse
-    email_array = self.email_string.split(",").map do |email|
-      email_stripped = email.strip
-      sub_email_array = email_stripped.split(" ")
-      if sub_email_array.length > 1 
-        sub_email_array.map do |sub_email|
-          sub_email.strip
-        end
-      else
-        email_stripped
-      end
-    end
-    email_array.flatten.uniq
+    self.email_string.split(/, | /).uniq
   end
   
 end
