@@ -15,8 +15,7 @@ class EmailParser
     #1. accept emails
     #2. use .split to separate discrete addresses
     #3. return array of unique split addresses
-    split_list = emails.split(/, | /)
-    split_list.uniq
+    split_list = emails.split(/, | /).uniq
   end
 
 end
