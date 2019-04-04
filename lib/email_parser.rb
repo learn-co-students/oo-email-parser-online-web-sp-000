@@ -12,7 +12,7 @@ class EmailParser
   
   def parse
     new_split = @email.split(", ")
-    new_split = new_split.uniq
+    new_split = new_split.uniq.strip
     
   
    
