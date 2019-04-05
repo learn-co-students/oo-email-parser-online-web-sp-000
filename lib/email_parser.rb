@@ -11,10 +11,13 @@ class EmailParser
   end 
   
   def parse
-    new_split = @email.split(", ")
-    new_split = new_split.uniq.strip
-    
-  
+    if @email.include?(", ")
+      new_split = @email.split(", ")
+    elsif @email.include?(" ")
+      new_split = @email.split(" ")
+    end 
+
+    new_split.uniq 
    
   end 
   
