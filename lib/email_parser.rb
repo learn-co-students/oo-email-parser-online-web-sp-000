@@ -12,7 +12,7 @@ class EmailParser
     @unformated_list = list
   end
 
-  def self.parse
+  def parse
     email_list = []
     list = @unformated_list.split(/, | |,/)
     email_list = list.uniq
