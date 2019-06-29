@@ -18,6 +18,12 @@ class EmailParser
       @emails.uniq
     end
   end
+
+  #alternative solution
+  # def parse
+  #   @emails = @emails.gsub(",", "").split(" ")
+  #   @emails.uniq 
+  # end   
 end
 
 emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
