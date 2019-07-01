@@ -11,6 +11,7 @@ class EmailParser
   end
 
   #split, Divides str into substrings based on a delimiter, returning an array of these substrings.
+  #splits argument of the character in the string on which you want to split it (comma, whitespace)
   def parse
     @emails.split(/, | /).uniq        #unique call. #split commas or whitespace
   end
