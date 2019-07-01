@@ -4,8 +4,14 @@
 # or whitespace (' ').
 class EmailParser
 
-attr_accessor
+  attr_accessor :emails        #setter/getter
 
-def parse
+  def initialize(emails)
+    @emails = emails          #initialize instance variable emails
+  end
 
+  #split, Divides str into substrings based on a delimiter, returning an array of these substrings.
+  def parse
+    @emails.split(/, | /).uniq        #unique call. #split commas or whitespace
+  end
 end
