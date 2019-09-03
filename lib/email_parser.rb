@@ -13,7 +13,6 @@ class EmailAddressParser
   def parse
     
     if @email_addresses.include?(",") == true
-      @array = []
       emails = @email_addresses.delete! ","
       list = emails.split
       list.uniq
