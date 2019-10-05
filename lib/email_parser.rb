@@ -12,13 +12,6 @@ class EmailAddressParser
   end
   
   def parse
-    #if @email_addresses.include?(" ")
-    #  new_list = @email_addresses.split(" ")
-    #  new_list.each {|email| email}
-    #elsif @email_addresses.include?(", ")
-    #  new_list = @email_addresses.split(", ")
-    #  new_list.each {|email| email}
-    #end
    new_array = @email_addresses.split(/\,|\s/).each {|email| email}.uniq
    new_array.reject{|c| c.empty?}
 end
