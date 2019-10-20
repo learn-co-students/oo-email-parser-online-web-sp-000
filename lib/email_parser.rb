@@ -5,11 +5,12 @@ require "pry"
 # or whitespace (' ').
 
 class EmailAddressParser
+  attr_reader :email_addr
   def initialize(email_addresses)
     @email_addr = email_addresses
   end
   
   def parse
-    parsed = @email_addr.split(/,? /).uniq
+    @email_addr.split(/,? /).uniq
   end
 end
