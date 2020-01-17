@@ -2,3 +2,16 @@
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
+
+class EmailAddressParser
+  def initialize(emails)
+    
+  end 
+  
+  def parse
+    
+  end 
+  
+  # where do I put the parse method?
+  # Do I define it outside of the initialize method or inside?
+end 
