@@ -10,16 +10,13 @@ def initialize(email)
   @emails = email
 end
 
-def parse 
-    csv_emails.split.collect do |address|
-      address.split(',') 
-    end
-    .flatten.uniq 
-  end 
-end 
+def parse
+  emails.delete(',').split.uniq
+ end
 
+end
 
 email_addresses = ("tmills@doe.com", "keith@houston.org")
-parser = EmailAddressParser.new(email_addresses)
+parser = EmailParser.new (email_addresses)
 
-parser .parse
+parser.parse
