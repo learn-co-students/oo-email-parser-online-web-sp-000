@@ -8,8 +8,13 @@ attr_accessor :emails
   end
 
   def parse
-    binding.pry
+    a = @email.split(/, | /)
+a.uniq!
+
+  a
+
   end
+
 end
 
 # # Build a class EmailParser that accepts a string of unformatted
