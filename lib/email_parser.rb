@@ -4,23 +4,14 @@
 # or whitespace (' ').
 class EmailAddressParser
   attr_accessor :email
-  @@all = []
 
-  def initialize(string)
-    @email = string
+  def initialize(emails)
+    @email = emails
   end
 
   def parse
-    mail = @email.split.collect do |n|
-      if n.include?(",")
-        n.chomp(",")
-      else
-        n
-      end
-    end
-    mail.uniq
+    email.split(/, | /).uniq
   end
-
 end
 
 # avi_test = EmailAddressParser.new("avi@test.com arel@test.com")
