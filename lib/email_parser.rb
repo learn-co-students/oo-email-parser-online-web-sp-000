@@ -13,3 +13,8 @@ class EmailAddressParser
         emails.split(/, | /).uniq
     end
 end
+
+# parses CSV emails
+# parses space delimited emails
+# parses both CSV and space delimited emails
+# parses and removes duplicate emails
