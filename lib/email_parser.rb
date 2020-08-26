@@ -5,7 +5,7 @@
 
 class EmailAddressParser
 
-  attr_accessor :email_addresses
+  # attr_accessor :email_addresses
 
   def initialize(email_addresses)
     @email_addresses = email_addresses
@@ -17,6 +17,6 @@ class EmailAddressParser
 
 end
 
-email_addresses = "john@doe.com, mary@beth.org porky@pig.net"
-parser = EmailAddressParser.new(email_addresses)
-parser.parse
+# email_addresses = "john@doe.com, mary@beth.org porky@pig.net"
+# parser = EmailAddressParser.new(email_addresses)
+# parser.parse
