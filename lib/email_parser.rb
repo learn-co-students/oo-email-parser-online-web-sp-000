@@ -16,9 +16,3 @@ class EmailAddressParser
     @email_addresses.uniq
   end
 end
-
-#if @raw_email_addresses.include?(",") == true
-#  @email_addresses = @raw_email_addresses.split(", ")
-#else
-#  @email_addresses = @raw_email_addresses.split(" ")
-#end
