@@ -10,8 +10,8 @@ class EmailAddressParser
     @emails = emails
   end
 
-#  def parse
-#    @emails.gsub(","," ").split.uniq
+#  def parse                        #solution without regext
+#    @emails.gsub(","," ").split.uniq     #substitute whitespace for commas, then split
 #  end
 
   def parse
