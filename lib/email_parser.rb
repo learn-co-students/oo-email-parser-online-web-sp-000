@@ -11,7 +11,6 @@ class EmailAddressParser
 
   def parse
     @csv_file = @csv_file.gsub(/[,]/,"")
-    @emails = @csv_file.split(" ")
-    @emails = @emails.uniq
+    @emails = @csv_file.split(" ").uniq
   end
 end
