@@ -13,7 +13,10 @@ class EmailAddressParser
   def parse
     @email.split(/[, ]/).uniq.reject {|string| string.empty?}
     
-    # The below line of code is the same thing as above but way more elegant(below code received from the solution. Above is what I wrote.). The "|" pipe character is a comparrison character. Says, split the string into an array at ", " or " "
+    # The below line of code is the same thing as above but way more elegant
+    # (below code received from the solution. Above is what I wrote.). 
+    # The "|" pipe character is a comparrison character. 
+    # Says, split the string into an array at ", " or " "
     # This will not create any empty strings and therefore the #reject method does not need to be used. 
     
     # @email.split(/, | /).uniq 
